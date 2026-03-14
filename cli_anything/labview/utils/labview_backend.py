@@ -5,7 +5,7 @@ import json
 import platform
 import glob
 
-LABVIEW_YEARS = ["2024", "2023", "2022", "2021", "2020", "2019"]
+LABVIEW_YEARS = ["2025", "2024", "2023", "2022", "2021", "2020", "2019"]
 
 def find_labview_cli(year=None):
     """
@@ -25,6 +25,8 @@ def find_labview_cli(year=None):
     
     if system == "Darwin": # macOS
         base_paths = [
+            "/Applications/National Instruments/LabVIEW {year} 64-bit/LabVIEWCommunity.app/Contents/MacOS/LabVIEWCLI",
+            "/Applications/National Instruments/LabVIEW {year}/LabVIEWCommunity.app/Contents/MacOS/LabVIEWCLI",
             "/Applications/National Instruments/LabVIEW {year} 64-bit/LabVIEW CLI/LabVIEWCLI",
             "/Applications/National Instruments/LabVIEW {year}/LabVIEW CLI/LabVIEWCLI",
             "/Library/Application Support/National Instruments/LabVIEW CLI/LabVIEWCLI"  # Common location
