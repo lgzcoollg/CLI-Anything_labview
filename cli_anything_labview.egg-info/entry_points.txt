@@ -1,0 +1,2 @@
+[console_scripts]
+cli-anything-labview = cli_anything.labview.labview_cli:cli

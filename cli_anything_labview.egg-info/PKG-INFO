@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: cli-anything-labview
+Version: 0.1.0
+Summary: CLI Anything harness for LabVIEW
+Requires-Python: >=3.10
+Requires-Dist: click
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
